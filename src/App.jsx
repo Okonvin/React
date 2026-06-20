@@ -1,28 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 
-import logoImg from './assets/cloudtopG.jpeg'
-import {  Routes, Route, Link, NavLink, Router} from 'react-router-dom'; 
+import {  Routes, Route}from 'react-router-dom'; 
 import Home from './component/Home.jsx'
 import Footer from './component/Footer.jsx'
 import Navbar from './component/NavBar.jsx'
 import './App.css'
+import SignUp from './component/Signup/Signup.jsx';
+import Signin from './component/Signin/Signin.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+   return ( 
+        <>
+                <Navbar/>
+                
 
-  return ( 
+                <Routes>
 
-        <Router>
-            <Routes>
-                <Route path='/' element={<Home/>}/>
-            </Routes>
+                        
+                        <Route path='/' element={<Home/>}/>
+                        <Route path='/signup' element={<SignUp/>}/>
+                        <Route path='/signin' element={<Signin/>}/>
 
-        </Router>
+                </Routes>
+
+                <Footer/>
+
+          </>
       
   );
 }
 
 export default App
+ 

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+/* Header */
+
+.header-div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.header-div a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-div h2{
+    font-size: 20px;
+    font: 100;
+}
+
+/* image and formbox */
+.main-div{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.img-div img{
+    max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.form-div{
+    flex: 1;
+    padding: 20px;
+}
+
+.form-div h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-box{
+    padding-top: 20px;
+}
+
+.input-feild{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.input-feild i{
+    position: absolute;
+    left: 10px;
+    color: #666;
+}
+
+.input-feild input{
+    width: 100%;
+    padding: 15px 15px 15px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus{
+    border-color: #6534D9;
+}
+
+/* login btn */
+
+.login-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login-btn button{
+    padding: 10px  30px;
+    border-radius: 50px;
+    background-color: #6534D9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn button:hover{
+    background-color: #4a24a3;
+}
+
+.login-btn p{
+    padding-top: 10px;
+}
+/* logos */
+
+.logos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 30px;
+}
+
+.logos img{
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.logos img:hover{
+    transform: scale(1.1);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .main-div{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-btn{
+        flex-direction: column;
+    }
+
+    .login-btn button{
+        width: 100%;
+    }
+}
