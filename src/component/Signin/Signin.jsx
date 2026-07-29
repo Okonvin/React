@@ -6,44 +6,44 @@ function Signin (){
         <>
         
             
-    <div ClassName="main-container">
+    <div className="main-container">
         {/* <!-- Header --> */}
-        <div ClassName="header-div">
-            <Linnk to="">
+        <div className="header-div">
+            <Link to="">
                 <h2> CloudtopG</h2>
-            </Linnk>
+            </Link>
             <h2>
-                New User?<a href="/Login_page/index.html">SignUp</a>
+                New User?<Link to="/Signup">SignUp</Link>
             </h2>
         </div>
 
         {/* <!------Image And Form Box Div------> */}
-        <div ClassName="main-div">
+        <div className="main-div">
             {/* <!------ Image Div --> */}
-            <div ClassName="img-div">
+            <div className="img-div">
                <img src="https://cloudtopg.netlify.app/assets/login_pic-ju_59Ozl.png" alt=""/>
             </div>
             {/* <!----- Form Box ------> */}
-            <div ClassName="form-div">
+            <div className="form-div">
                 <h1>Welcome Back!</h1>
                 <p>Login to continue</p>
-                <form ClassName="form-box">
-                    <div ClassName="input-feild">
-                        <i ClassName="fa-regular fa-envelope"></i>
+                <form className="form-box">
+                    <div className="input-feild">
+                        <i className="fa-regular fa-envelope"></i>
                         <input type="email" name="email" placeholder="Email"/>
                     </div>
-                    <div ClassName="input-feild">
-                        <i ClassName="fa-solid fa-lock"></i>
+                    <div className="input-feild">
+                        <i className="fa-solid fa-lock"></i>
                         <input type="password" name="password" placeholder="Password"/>
                     </div>
                      {/* <!--login btn  --> */}
-                    <div ClassName="login-btn">
+                    <div className="login-btn">
                         <button>Login</button>
                          <p>FORGET PASSWORD?</p>
                     </div>
 
                     {/* <!-- logos --> */}
-                    <div ClassName="logos">
+                    <div className="logos">
                         <p>Login with</p>
                         <div>
                             <img src="https://cloudtopg.netlify.app/assets/google-m1QL4cL7.png" alt="Google Login"/>

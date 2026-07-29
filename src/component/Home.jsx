@@ -1,6 +1,14 @@
+import Navbar from '../component/NavBar.jsx'
+import Footer from '../component/Footer.jsx'
+
+
 function Home(){
     return(
+        
+        
         <>
+
+        <Navbar/>
            
 {/* <!------- search engine and marketing section-------> */}
     <div className="marketing">
@@ -186,7 +194,10 @@ function Home(){
         <h3>Do you have any projects?<br/>Contact Us</h3>
         <button className="sec-8-btn">Contact Us</button>
     </div>
-        </>
+
+
+       <Footer/>
+   </>
     )
 }
 

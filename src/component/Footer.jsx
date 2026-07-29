@@ -1,3 +1,6 @@
+// import Navbar from './component/NavBar.jsx'
+
+
 function footer(){
     return(
         <>

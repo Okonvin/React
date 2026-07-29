@@ -1,4 +1,4 @@
-import  "../Signup/Signup.css";
+import  "./Signup.css";
 import { Link } from 'react-router-dom'
 
 
@@ -7,48 +7,48 @@ function SignUp () {
         <>
 
         
-  <div ClassName="main-container">
+  <div className="main-container">
     {/* <!-- Header --> */}
-    <div ClassName="container-1">
+    <div className="container-1">
       <Link to="/">
         <h2>Cloudtop G</h2>
       </Link>
       <h2>
-        Existing User? <a href="/Login_page/index.html">Login</a>
+        Existing User? <Link to="/Signin">Login</Link>
       </h2>
     </div>
 
    {/*  <!-- Registration Form Section -->  */}
-    <div ClassName="form-box">
-      <div ClassName="img-container">
+    <div className="form-box">
+      <div className="img-container">
         <img src="https://cloudtopg.netlify.app/assets/login_pic-ju_59Ozl.png" alt="Login illustration"/>
       </div>
 
-      <div ClassName="form-container">
+      <div className="form-container">
         <h1>User Registration</h1>
-        <form ClassName="form-field">
-          <div ClassName="form-div">
-            <div ClassName="input-field">
-              <i ClassName="fa-regular fa-user"></i>
+        <form className="form-field">
+          <div className="form-div">
+            <div className="input-field">
+              <i className="fa-regular fa-user"></i>
               <input type="text" name="fullname" placeholder="Full Name" required/>
             </div>
 
-            <div ClassName="input-field">
-              <i ClassName="fa-regular fa-envelope"></i>
+            <div className="input-field">
+              <i className="fa-regular fa-envelope"></i>
               <input type="email" name="email" placeholder="Email" required/>
             </div>
 
-            <div ClassName="input-field">
-              <i ClassName="fa-solid fa-lock"></i>
+            <div className="input-field">
+              <i className="fa-solid fa-lock"></i>
               <input type="password" name="password" placeholder="Password" required/>
             </div>
 
-            <div ClassName="signup-btn">
+            <div className="signup-btn">
               <button type="submit">Sign Up</button>
               <p>Existing User? <a href="/Login_page/index.html">Login</a></p>
             </div>
 
-            <div ClassName="logos">
+            <div className="logos">
               <p>Signup with</p>
               <div>
                 <img src="https://cloudtopg.netlify.app/assets/google-m1QL4cL7.png" alt="Google login"/>

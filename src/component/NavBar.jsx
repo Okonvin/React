@@ -1,4 +1,4 @@
-import img from '../../public/assets/img.jpeg'
+// import img from '../../public/assets/img.jpeg'
 import { Link } from 'react-router-dom'
 
 function Header(){
@@ -8,7 +8,7 @@ function Header(){
                     <nav className="navbar-container">
                         <div className="logo">
                         <Link to="/">
-                            <img src={img} alt="Cloudtop G Logo" className="logo-img"/>
+                            <img src="/assets/img.jpeg" alt="Cloudtop G Logo" className="logo-img"/>
                             <span>Cloudtop G</span>
                         </Link>
                         </div>
