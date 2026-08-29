@@ -1,5 +1,5 @@
-import Navbar from '../component/NavBar.jsx'
-import Footer from '../component/Footer.jsx'
+import Navbar from './NavBar.jsx'
+import Footer from './Footer.jsx'
 
 
 function Home(){

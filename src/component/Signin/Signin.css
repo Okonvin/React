@@ -51,12 +51,17 @@ body{
 }
 
 .form-div h1{
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
-.form-box{
+.form-div > p{
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.form-box2{
     padding-top: 20px;
 }
 
@@ -76,8 +81,10 @@ body{
 .input-feild input{
     width: 100%;
     padding: 15px 15px 15px 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     outline: none;
 }
 
@@ -110,20 +117,30 @@ input:focus{
 }
 
 .login-btn p{
-    padding-top: 10px;
+    color: #6534D9;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
 }
 /* logos */
 
 .logos{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-top: 30px;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 35px;
+}
+
+.logos > p{
+    color: #444;
 }
 
 .logos img{
-    width: 30px;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
     cursor: pointer;
     transition: transform 0.2s;
 }
