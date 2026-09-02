@@ -35,7 +35,7 @@ function Signin() {
             <h2>CloudtopG</h2>
           </Link>
           <h2>
-            New User? <Link to="Signup">SignUp</Link>
+            New User? <Link to="/signup">SignUp</Link>
           </h2>
         </div>
 

@@ -1,8 +1,22 @@
 import Navbar from './NavBar.jsx'
 import Footer from './Footer.jsx'
+ import { useEffect } from 'react';
+ import { useNavigate } from 'react-router-dom';
+
 
 
 function Home(){
+
+      const navigate = useNavigate();
+    
+
+        useEffect(() => {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                navigate('/signin'); // Redirect to login page if token does not exist
+            }
+        }, [navigate]);
+
     return(
         
         
