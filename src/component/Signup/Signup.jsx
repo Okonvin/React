@@ -32,7 +32,7 @@ function SignUp () {
         }, 5000)
         console.log('user signup successfully')
       } catch(error){
-        toast.error('Error signing up: ' + error)
+        toast.error(error.response?.data?.message || 'We could not create your account. Check your details and try again.')
         console.error('Error signing up:', error)
       }
     }
@@ -101,7 +101,7 @@ function SignUp () {
 
                       <div className="signup-btn">
                         <button type="submit">Sign Up</button>
-                        <p>Existing User? <Link to="/Signin">Login</Link></p>
+                        
                       </div>
 
                       <div className="logos">

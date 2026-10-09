@@ -22,7 +22,7 @@ function Signin() {
       toast.success('Logged in successfully')
       navigate('/')
     } catch (error) {
-      toast.error('Error logging in: ' + error)
+      toast.error(error.response?.data?.message || 'We could not sign you in. Check your email and password and try again.')
       console.error('Error logging in:', error)
     }
   }
@@ -75,7 +75,7 @@ function Signin() {
 
               <div className="login-btn">
                 <button type="submit">Login</button>
-                <p>FORGET PASSWORD?</p>
+                <p>Forgot password?</p>
               </div>
 
               <div className="logos">
