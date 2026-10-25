@@ -176,6 +176,22 @@ header {
 
 /* Responsive */
 @media (max-width: 900px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    padding: 1.25rem;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+  .nav-items.active { display: flex; }
+  .menu-toggle { display: block; }
+  .buttons { display: none; }
   .sec-4-container, .section-5 { grid-template-columns: 1fr; gap: 2rem; }
   .footer { grid-template-columns: 1fr 1fr; }
 }
