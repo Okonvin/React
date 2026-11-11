@@ -18,7 +18,16 @@ function Signin() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.post('https://cloudtopg-auth-api-service.onrender.com/auth/login', formData)
+      const { data } = await axios.post('https://cloudtopg-auth-api-service.onrender.com/auth/login', formData)
+      // Home.jsx checks localStorage for 'token', so it must be saved here.
+      // Adjust the field name if your API uses something else (check DevTools > Network > login > Response).
+      const token = data?.token || data?.accessToken || data?.access_token
+      if (!token) {
+        toast.error('Login worked but the server did not return a token.')
+        console.error('Login response had no token field:', data)
+        return
+      }
+      localStorage.setItem('token', token)
       toast.success('Logged in successfully')
       navigate('/')
     } catch (error) {

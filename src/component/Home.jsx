@@ -1,7 +1,7 @@
 import Navbar from './NavBar.jsx'
 import Footer from './Footer.jsx'
  import { useEffect } from 'react';
- import { useNavigate } from 'react-router-dom';
+ import { useNavigate, Link } from 'react-router-dom';
 
 
 
@@ -29,7 +29,7 @@ function Home(){
          <h1>Search and marketing that turns visitors into customers.</h1>
           <p>Cloudtop G helps businesses rank higher, reach the right audience and see exactly what is working.</p>
           <div className="sec-2-btn">
-            <a href="/signup" className="btn-3">Get started</a>
+            <Link to="/signup" className="btn-3">Get started</Link>
             <a href="#services" className="btn-4">Learn more</a>
           </div>
          <img src="https://cloudtopg.netlify.app/assets/banner-Bzk-7Zru.svg" alt="Dashboard showing search and marketing results"/>
