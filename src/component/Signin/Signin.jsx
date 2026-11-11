@@ -18,7 +18,7 @@ function Signin() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.post('https://cloudtopg-auth-api-service.onrender.com/auth/signin', formData)
+      await axios.post('https://cloudtopg-auth-api-service.onrender.com/auth/login', formData)
       toast.success('Logged in successfully')
       navigate('/')
     } catch (error) {
